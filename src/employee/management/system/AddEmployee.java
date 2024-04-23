@@ -26,48 +26,48 @@ public class AddEmployee extends JFrame implements ActionListener{
     JLabel lblempId;
     JButton add, back;
 	
-	public AddEmployee() {
-		getContentPane().setBackground(Color.WHITE);
-		setLayout(null);
-		
-		JLabel heading = new JLabel("Add Employee Details");
-		heading.setBounds(320, 30, 500, 50);
-		heading.setFont(new Font("SANS_SERIF", Font.BOLD, 25));
-		add(heading);
-		
-		JLabel labelname = new JLabel("Name");
-		labelname.setBounds(50, 150, 150, 30);
-		labelname.setFont(new Font("SERIF", Font.PLAIN, 20));
-		add(labelname);
-		
-		JTextField tfname = new JTextField();
-		tfname.setBounds(200, 150, 150, 30);
-		add(tfname);
-		
-		JLabel labelfname = new JLabel("Father's Name");
-		labelfname.setBounds(400, 150, 150, 30);
-		labelfname.setFont(new Font("SERIF", Font.PLAIN, 20));
-		add(labelfname);
-		
-		JTextField tffname = new JTextField();
-		tffname.setBounds(600, 150, 150, 30);
-		add(tffname);
+    public AddEmployee() {
+        getContentPane().setBackground(Color.WHITE);
+        setLayout(null);
+        
+        JLabel heading = new JLabel("Add Employee Details");
+        heading.setBounds(320, 30, 500, 50);
+        heading.setFont(new Font("SANS_SERIF", Font.BOLD, 25));
+        add(heading);
+        
+        JLabel labelname = new JLabel("Name");
+        labelname.setBounds(50, 150, 150, 30);
+        labelname.setFont(new Font("SERIF", Font.PLAIN, 20));
+        add(labelname);
+        
+        tfname = new JTextField(); // Changed from JTextField tfname = new JTextField();
+        tfname.setBounds(200, 150, 150, 30);
+        add(tfname);
+        
+        JLabel labelfname = new JLabel("Father's Name");
+        labelfname.setBounds(400, 150, 150, 30);
+        labelfname.setFont(new Font("SERIF", Font.PLAIN, 20));
+        add(labelfname);
+        
+        tffname = new JTextField(); // Changed from JTextField tffname = new JTextField();
+        tffname.setBounds(600, 150, 150, 30);
+        add(tffname);
 		
 		JLabel labeldob = new JLabel("Date of Birth");
 		labeldob.setBounds(50, 200, 150, 30);
 		labeldob.setFont(new Font("SERIF", Font.PLAIN, 20));
 		add(labeldob);
 		
-		JDateChooser dcdob = new JDateChooser();
-		dcdob.setBounds(200, 200, 150, 30);
-		add(dcdob);
+		dcdob = new JDateChooser(); // Corrected initialization
+	    dcdob.setBounds(200, 200, 150, 30);
+	    add(dcdob);
 		
 		JLabel labelsalary = new JLabel("Salary");
 		labelsalary.setBounds(400, 200, 150, 30);
 		labelsalary.setFont(new Font("SERIF", Font.PLAIN, 20));
 		add(labelsalary);
 		
-		JTextField tfsalary = new JTextField();
+		tfsalary = new JTextField();
 		tfsalary.setBounds(600, 200, 150, 30);
 		add(tfsalary);
 		
@@ -76,7 +76,7 @@ public class AddEmployee extends JFrame implements ActionListener{
 		labeladdress.setFont(new Font("SERIF", Font.PLAIN, 20));
 		add(labeladdress);
 		
-		JTextField tfaddress = new JTextField();
+		tfaddress = new JTextField();
 		tfaddress.setBounds(200, 250, 150, 30);
 		add(tfaddress);
 		
@@ -85,7 +85,7 @@ public class AddEmployee extends JFrame implements ActionListener{
 		labelphone.setFont(new Font("SERIF", Font.PLAIN, 20));
 		add(labelphone);
 		
-		JTextField tfphone = new JTextField();
+		tfphone = new JTextField();
 		tfphone.setBounds(600, 250, 150, 30);
 		add(tfphone);
 		
@@ -94,7 +94,7 @@ public class AddEmployee extends JFrame implements ActionListener{
 		labelemail.setFont(new Font("SERIF", Font.PLAIN, 20));
 		add(labelemail);
 		
-		JTextField tfemail = new JTextField();
+		tfemail = new JTextField();
 		tfemail.setBounds(200, 300, 150, 30);
 		add(tfemail);
 		
